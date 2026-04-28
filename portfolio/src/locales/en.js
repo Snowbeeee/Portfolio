@@ -18,7 +18,7 @@ export const en = {
       title: 'Education',
       degree: "Bachelor's Degree in Software Engineering",
       university: 'University of Malaga',
-      year: '2025',
+      year: '2024-2026',
     },
     languages: {
       title: 'Languages',
@@ -86,7 +86,7 @@ export const en = {
     },
     battleclickerrpg: {
       name: 'BattleClickerRPG',
-      duration: '2024 · 3 months',
+      duration: '2025 · 3 months',
       description:
         'Android clicker RPG game combining clicking mechanics with traditional RPG elements such as bosses, skills, and persistent stat tracking. Modular architecture with a centralized audio management system, SQLite database with version-based migrations, and immersive fullscreen mode.',
       modules: [

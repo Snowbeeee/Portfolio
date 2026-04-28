@@ -35,6 +35,7 @@ export const projects = [
   {
     id: 'battleclickerrpg',
     githubUrl: 'https://github.com/Snowbeeee/BattleClickerRPG',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.kazukidev.battleclickerrpg',
     images: [
       '/images/battleclickerrpg/1.png',
       '/images/battleclickerrpg/2.png',
@@ -66,10 +67,9 @@ export const projects = [
 
 export const allSkills = [
   'react', 'typescript', 'javascript', 'css3', 'bootstrap',
-  'python', 'fastapi', 'java', 'springboot', 'jsp',
+  'python', 'fastapi', 'java', 'springboot',
   'android',
   'mongodb', 'mysql', 'sqlite',
   'docker', 'git', 'gradle',
-  'cloudinary', 'oauth',
   'r',
 ];

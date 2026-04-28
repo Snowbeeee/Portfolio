@@ -18,7 +18,7 @@ export const es = {
       title: 'Formación',
       degree: 'Grado en Ingeniería del Software',
       university: 'Universidad de Málaga',
-      year: '2025',
+      year: '2024-2026',
     },
     languages: {
       title: 'Idiomas',
@@ -86,7 +86,7 @@ export const es = {
     },
     battleclickerrpg: {
       name: 'BattleClickerRPG',
-      duration: '2024 · 3 meses',
+      duration: '2025 · 3 meses',
       description:
         'Videojuego RPG de tipo clicker para Android. Combina mecánicas de clic con elementos RPG tradicionales como jefes, habilidades y estadísticas persistentes. Arquitectura modular con sistema de audio centralizado, base de datos SQLite con migraciones por versión y modo inmersivo a pantalla completa.',
       modules: [

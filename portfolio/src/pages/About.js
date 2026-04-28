@@ -38,35 +38,36 @@ export default function About() {
         <p className="about-role">{ab.role}</p>
       </section>
 
-      {/* Education */}
-      <section className="about-section">
-        <h2 className="section-title">{ab.education.title}</h2>
-        <div className="info-card edu-card">
-          <img src="/icons/uma-logo.png" alt="Universidad de Málaga" className="edu-logo" />
-          <div>
-            <p className="info-primary">{ab.education.degree}</p>
-            <p className="info-secondary">{ab.education.university} · {ab.education.year}</p>
+      {/* Education + Languages */}
+      <div className="about-row">
+        <section className="about-section">
+          <h2 className="section-title">{ab.education.title}</h2>
+          <div className="info-card edu-card">
+            <img src="/icons/uma-logo.jpeg" alt="Universidad de Málaga" className="edu-logo" />
+            <div>
+              <p className="info-primary">{ab.education.degree}</p>
+              <p className="info-secondary">{ab.education.university} · {ab.education.year}</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Languages */}
-      <section className="about-section">
-        <h2 className="section-title">{ab.languages.title}</h2>
-        <div className="info-card languages-card">
-          <div className="lang-row">
-            <span className="lang-name">{ab.languages.spanish}</span>
-            <span className="lang-level native">{ab.languages.spanishLevel}</span>
+        <section className="about-section">
+          <h2 className="section-title">{ab.languages.title}</h2>
+          <div className="info-card languages-card">
+            <div className="lang-row">
+              <span className="lang-name">{ab.languages.spanish}</span>
+              <span className="lang-level native">{ab.languages.spanishLevel}</span>
+            </div>
+            <div className="lang-row">
+              <span className="lang-name">{ab.languages.english}</span>
+              <span className="lang-level">
+                <span className="native">{ab.languages.englishHighlight}</span>
+                {' '}{ab.languages.englishLevel}
+              </span>
+            </div>
           </div>
-          <div className="lang-row">
-            <span className="lang-name">{ab.languages.english}</span>
-            <span className="lang-level">
-              <span className="native">{ab.languages.englishHighlight}</span>
-              {' '}{ab.languages.englishLevel}
-            </span>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Skills */}
       <section className="about-section">

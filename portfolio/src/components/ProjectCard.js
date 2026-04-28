@@ -44,6 +44,17 @@ export default function ProjectCard({ project }) {
               <img src="/icons/github.svg" alt="GitHub" className="btn-icon" />
               {t.home.github}
             </a>
+            {project.playStoreUrl && (
+              <a
+                href={project.playStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-github"
+              >
+                <img src="/icons/playstore.svg" alt="Google Play Store" className="btn-icon" />
+                Google Play Store
+              </a>
+            )}
           </footer>
         </div>
       </article>
