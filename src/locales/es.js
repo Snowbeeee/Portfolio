@@ -18,7 +18,7 @@ export const es = {
       title: 'Formación',
       degree: 'Grado en Ingeniería del Software',
       university: 'Universidad de Málaga',
-      year: '2024-2026',
+      year: '2021-2026',
     },
     languages: {
       title: 'Idiomas',

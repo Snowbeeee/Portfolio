@@ -18,7 +18,7 @@ export const en = {
       title: 'Education',
       degree: "Bachelor's Degree in Software Engineering",
       university: 'University of Malaga',
-      year: '2024-2026',
+      year: '2021-2026',
     },
     languages: {
       title: 'Languages',
