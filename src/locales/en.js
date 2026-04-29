@@ -227,5 +227,54 @@ export const en = {
         },
       ],
     },
+    gamelibrary: {
+      name: 'Game Library & Emulation Interface',
+      duration: '2026 · 3 months',
+      description:
+        'Desktop application for managing and emulating Nintendo DS and 3DS games. Integrates a visual game library with automatic cover art and metadata retrieval via the ScreenScraper API, emulation through the libretro interface (melonDS and Citra cores), per-session statistics tracking, and full keyboard and gamepad control configuration. Built with PyQt6 and packaged as a standalone executable with PyInstaller.',
+      note: 'This project is the Final Year Project (TFG) of the Software Engineering Bachelor\'s Degree at the University of Malaga, developed individually during the final year of studies.',
+      modules: [
+        {
+          title: 'Visual game library & UI',
+          items: [
+            'Automatic ROM scanning with icon extraction from DS and 3DS binary headers',
+            'Cover art grid with custom collections and category filtering',
+            'Real-time ROM folder monitoring — detects new games without restarting the app',
+          ],
+        },
+        {
+          title: 'Emulation core integration (libretro)',
+          items: [
+            'Dynamic loading of melonDS and Citra cores via FFI with ctypes',
+            'Full libretro callback implementation: video, audio, input, and capability negotiation',
+            'Hardware-accelerated rendering with OpenGL and dedicated framebuffers',
+          ],
+        },
+        {
+          title: 'Automatic metadata & cover art',
+          items: [
+            'Content-based game identification using CRC32, MD5, and SHA1 hashes',
+            'ScreenScraper API integration for cover art, description, genre, and release year',
+            'Local disk cache to minimize redundant API calls',
+          ],
+        },
+        {
+          title: 'Statistics, sessions & configuration',
+          items: [
+            'Automatic tracking of total playtime and last session date per title',
+            'Resolution, renderer, and volume settings applied with immediate effect',
+            'Full state persistence in JSON: configuration, statistics, and game lists',
+          ],
+        },
+        {
+          title: 'Input & controller management',
+          items: [
+            'Simultaneous keyboard and gamepad support via pygame with per-button mapping',
+            'Independent control schemes for DS and 3DS, configurable in real time',
+            'Nintendo DS touch screen emulation with pointer and stylus support',
+          ],
+        },
+      ],
+    },
   },
 };

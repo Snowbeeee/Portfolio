@@ -51,7 +51,7 @@ export default function Modal({ project, onClose }) {
         </div>
 
         <div className="modal-group-note">
-          <p>{t.home.groupProjectNote}</p>
+          <p>{proj.note || t.home.groupProjectNote}</p>
         </div>
 
         <div className="modal-footer">

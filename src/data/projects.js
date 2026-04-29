@@ -19,12 +19,25 @@ export const technologies = {
   css3:        { name: 'CSS3',         icon: '/icons/css3.svg' },
   r:           { name: 'R',            icon: '/icons/r.svg' },
   jsp:         { name: 'JSP',          icon: '/icons/jsp.svg' },
+  pyqt:        { name: 'PyQt6',        icon: '/icons/pyqt.svg' },
+  libretro:    { name: 'libretro',     icon: '/icons/libretro.svg' },
 };
 
 // Each item in `media` can be:
 //   - a string              → image path, e.g. '/images/foo/1.png'
 //   - { type: 'youtube', id: 'VIDEO_ID' } → YouTube embed
 export const projects = [
+  {
+    id: 'gamelibrary',
+    githubUrl: 'https://github.com/Snowbeeee/TFG',
+    media: [
+      // { type: 'youtube', id: 'TU_VIDEO_ID' },
+      '/images/gamelibrary/1.png',
+      '/images/gamelibrary/2.png',
+      '/images/gamelibrary/3.png',
+    ],
+    technologies: ['python', 'pyqt', 'libretro', 'git'],
+  },
   {
     id: 'kalendas',
     githubUrl: 'https://github.com/Snowbeeee/Kalendas',

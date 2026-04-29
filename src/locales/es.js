@@ -227,5 +227,54 @@ export const es = {
         },
       ],
     },
+    gamelibrary: {
+      name: 'Interfaz de Biblioteca de Juegos y Emulación',
+      duration: '2026 · 3 meses',
+      description:
+        'Aplicación de escritorio para la gestión y emulación de videojuegos de Nintendo DS y 3DS. Integra una biblioteca visual con descarga automática de portadas y metadatos a través de la API ScreenScraper, núcleos de emulación mediante la interfaz libretro (melonDS y Citra), seguimiento de estadísticas por sesión y configuración completa de controles para teclado y mando. Construida con PyQt6 y empaquetada como ejecutable standalone con PyInstaller.',
+      note: 'Este proyecto es el Trabajo de Fin de Grado del Grado en Ingeniería del Software de la Universidad de Málaga, desarrollado de forma individual durante el último curso de la carrera.',
+      modules: [
+        {
+          title: 'Biblioteca visual e interfaz gráfica',
+          items: [
+            'Escaneo automático de ROMs con extracción de iconos desde cabeceras binarias de DS y 3DS',
+            'Cuadrícula de portadas con colecciones personalizadas y filtrado por categoría',
+            'Monitorización en tiempo real de la carpeta de ROMs sin reiniciar la aplicación',
+          ],
+        },
+        {
+          title: 'Integración con núcleos de emulación (libretro)',
+          items: [
+            'Carga dinámica de los núcleos melonDS y Citra mediante FFI con ctypes',
+            'Implementación completa de callbacks libretro: vídeo, audio, entrada y negociación de capacidades',
+            'Renderizado acelerado por hardware con OpenGL y framebuffers dedicados',
+          ],
+        },
+        {
+          title: 'Metadatos y portadas automáticas',
+          items: [
+            'Identificación de juegos por contenido mediante hashes CRC32, MD5 y SHA1',
+            'Integración con la API ScreenScraper para portadas, descripción, género y año de lanzamiento',
+            'Caché local en disco para minimizar llamadas repetidas a la API',
+          ],
+        },
+        {
+          title: 'Estadísticas, sesiones y configuración',
+          items: [
+            'Seguimiento automático del tiempo de juego y fecha de última sesión por título',
+            'Configuración de resolución, renderizador y volumen con efecto inmediato',
+            'Persistencia completa del estado en JSON: configuración, estadísticas y listas',
+          ],
+        },
+        {
+          title: 'Gestión de entrada y mandos',
+          items: [
+            'Soporte simultáneo de teclado y mando mediante pygame con mapeo por botón',
+            'Esquemas de control independientes para DS y 3DS, configurables en tiempo real',
+            'Emulación de pantalla táctil para Nintendo DS con soporte de puntero y stylus',
+          ],
+        },
+      ],
+    },
   },
 };

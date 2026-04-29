@@ -14,6 +14,7 @@ export default function TechBadge({ techId }) {
           src={tech.icon}
           alt={tech.name}
           className="tech-icon"
+          draggable={false}
           onError={() => setImgError(true)}
         />
       ) : (
