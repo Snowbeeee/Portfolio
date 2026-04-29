@@ -19,8 +19,9 @@ export const technologies = {
   css3:        { name: 'CSS3',         icon: '/icons/css3.svg' },
   r:           { name: 'R',            icon: '/icons/r.svg' },
   jsp:         { name: 'JSP',          icon: '/icons/jsp.svg' },
-  pyqt:        { name: 'PyQt6',        icon: '/icons/pyqt.svg' },
-  libretro:    { name: 'libretro',     icon: '/icons/libretro.svg' },
+  pyqt:          { name: 'PyQt6',          icon: '/icons/pyqt.svg' },
+  libretro:      { name: 'libretro',       icon: '/icons/libretro.svg' },
+  screenscraper: { name: 'ScreenScraper',  icon: '/icons/screenscraper.svg' },
 };
 
 // Each item in `media` can be:
@@ -36,7 +37,7 @@ export const projects = [
       '/images/gamelibrary/2.png',
       '/images/gamelibrary/3.png',
     ],
-    technologies: ['python', 'pyqt', 'libretro', 'git'],
+    technologies: ['python', 'pyqt', 'libretro', 'screenscraper', 'git'],
   },
   {
     id: 'kalendas',
