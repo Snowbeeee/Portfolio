@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
     <>
       <article className="project-card">
         <div className="card-accent-bar" />
-        <Carousel images={project.images} projectName={proj.name} />
+        <Carousel media={project.media} projectName={proj.name} />
         <div className="card-body">
           <header className="card-header">
             <h2 className="card-title">{proj.name}</h2>

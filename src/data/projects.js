@@ -21,11 +21,15 @@ export const technologies = {
   jsp:         { name: 'JSP',          icon: '/icons/jsp.svg' },
 };
 
+// Each item in `media` can be:
+//   - a string              → image path, e.g. '/images/foo/1.png'
+//   - { type: 'youtube', id: 'VIDEO_ID' } → YouTube embed
 export const projects = [
   {
     id: 'kalendas',
     githubUrl: 'https://github.com/Snowbeeee/Kalendas',
-    images: [
+    media: [
+      { type: 'youtube', id: 'g7EeH8uFPoU' },
       '/images/kalendas/1.png',
       '/images/kalendas/2.png',
       '/images/kalendas/3.png',
@@ -36,30 +40,38 @@ export const projects = [
     id: 'battleclickerrpg',
     githubUrl: 'https://github.com/Snowbeeee/BattleClickerRPG',
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.kazukidev.battleclickerrpg',
-    images: [
-      '/images/battleclickerrpg/1.png',
-      '/images/battleclickerrpg/2.png',
-      '/images/battleclickerrpg/3.png',
+    media: [
+      { type: 'youtube', id: 'wTAKEyOOfVk' },
+      '/images/battleclickerrpg/1.jpeg',
+      '/images/battleclickerrpg/2.jpg',
+      '/images/battleclickerrpg/3.jpeg',
     ],
     technologies: ['java', 'android', 'sqlite', 'gradle', 'git'],
   },
   {
     id: 'movievibes',
     githubUrl: 'https://github.com/Snowbeeee/MovieVibes',
-    images: [
+    media: [
+      { type: 'youtube', id: 'sXD6P-HpNjI' },
       '/images/movievibes/1.png',
       '/images/movievibes/2.png',
       '/images/movievibes/3.png',
+      '/images/movievibes/4.png',
+      '/images/movievibes/5.png',
     ],
     technologies: ['java', 'springboot', 'mysql', 'jsp', 'docker', 'css3', 'git'],
   },
   {
     id: 'eurodle',
     githubUrl: 'https://github.com/Snowbeeee/Eurodle',
-    images: [
+    media: [
       '/images/eurodle/1.png',
       '/images/eurodle/2.png',
       '/images/eurodle/3.png',
+      '/images/eurodle/4.png',
+      '/images/eurodle/5.png',
+      '/images/eurodle/6.png',
+      '/images/eurodle/7.png',
     ],
     technologies: ['react', 'javascript', 'css3', 'bootstrap', 'r', 'docker', 'git'],
   },
