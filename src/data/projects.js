@@ -32,7 +32,7 @@ export const projects = [
     id: 'gamelibrary',
     githubUrl: 'https://github.com/Snowbeeee/TFG',
     media: [
-      { type: 'youtube', id: 'TQGIv_Y98nk' },
+      { type: 'youtube', id: 'uajW833dH60' },
       '/images/gamelibrary/1.png',
       '/images/gamelibrary/2.png',
       '/images/gamelibrary/3.png',
