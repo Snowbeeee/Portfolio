@@ -97,8 +97,12 @@ export default function Carousel({ media, images, projectName }) {
 
           {showNav && (
             <>
-              <button className="carousel-btn carousel-prev" onClick={prev}>&#8249;</button>
-              <button className="carousel-btn carousel-next" onClick={next}>&#8250;</button>
+              <button className="carousel-btn carousel-prev" onClick={prev}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none" aria-hidden="true"><path d="M8 1.5L2 8.5L8 15.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
+              <button className="carousel-btn carousel-next" onClick={next}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none" aria-hidden="true"><path d="M2 1.5L8 8.5L2 15.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
             </>
           )}
         </div>
@@ -133,8 +137,12 @@ export default function Carousel({ media, images, projectName }) {
 
           {lbItems.length > 1 && (
             <>
-              <button className="lightbox-btn lightbox-prev" onClick={lbPrev}>&#8249;</button>
-              <button className="lightbox-btn lightbox-next" onClick={lbNext}>&#8250;</button>
+              <button className="lightbox-btn lightbox-prev" onClick={lbPrev}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none" aria-hidden="true"><path d="M10 2L3 11L10 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
+              <button className="lightbox-btn lightbox-next" onClick={lbNext}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none" aria-hidden="true"><path d="M3 2L10 11L3 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
               <span className="lightbox-counter">{lbPos + 1} / {lbItems.length}</span>
             </>
           )}
